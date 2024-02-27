@@ -23,12 +23,10 @@ function App() {
         <div>
           <h2>O que você vai fazer?</h2>
           <TaskForm btnText='Criar Tarefa' taskList={taskList} setTaskList={setTaskList} />
-          <p>formulário</p>
         </div>
         <div>
           <h2>Suas tarefas:</h2>
-          <TaskList />
-          <p>lista</p>
+          <TaskList taskList={taskList}/>
         </div>
       </main>
       <Footer />
